@@ -1,9 +1,9 @@
 # Overview:
 The encryption-decryption scheme named as “Ouroboros Scheme” which means as a never-ending cycle and begins where it ends and ends where it begins. In technical terms this scheme utilizes a reversed ASCII transformation method to secure plaintext. The process involves reversing the input text, inserting a secret key (numerical value), adjusting ASCII codes, and creating a mapping between the modified ASCII codes and the corresponding characters.
 
-#Explanation:
+# Explanation:
 
-2.1 Encryption Process:
+## 2.1 Encryption Process:
 The reversal of the plaintext adds an additional layer of complexity. The ASCII code transformation introduces variability, and the mapping ensures uniqueness, preventing information loss during encryption. This scheme is designed to handle repeating letters gracefully.
 
 Program asks the user if he wants to perform Encryption or Decryption.
@@ -33,7 +33,7 @@ Alphabet Mapping:
 106 = j
 Encrypted Text: mnwj
 
-2.2 Decryption Process:
+## 2.2 Decryption Process:
 The decryption process involves reversing the text and restoring the original ASCII codes. The alphabet mapping facilitates the reconstruction of the original message.
 
 Program asks the user if he wants to perform Encryption or Decryption.
@@ -61,12 +61,12 @@ n = 108
 m = 107
 Decrypted Text: hulk
 
-#Analysis:
+# Analysis:
 
-4.1 Strengths:
+## 4.1 Strengths:
 Reversal Technique: Enhances security by making patterns less predictable.
 Variable Block Size: The scheme allows adjusting the block size for different security levels.
 
-4.2 Weaknesses:
+## 4.2 Weaknesses:
 Block Size Dependency: Security relies on the secrecy of the block size; if known, it could compromise the encryption.
 Mapping Complexity: For long texts, the alphabet mapping could become computationally expensive.
